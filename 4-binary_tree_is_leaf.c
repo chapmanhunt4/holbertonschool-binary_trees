@@ -9,10 +9,10 @@
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	binary_tree_t *temp = NULL;
-	binary_tree_t *check = node;
+	binary_tree_t *check = NULL;
 
 	check = malloc(sizeof(binary_tree_t));
-
+	*node = *check;
 	if (check == NULL)
 	{
 		return (0);
