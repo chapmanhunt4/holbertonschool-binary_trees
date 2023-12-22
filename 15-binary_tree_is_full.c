@@ -27,5 +27,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	right_count = binary_tree_is_full(tree->right);
 
 	if ((left_count == 0 && right_count == 1) || (left_count == 1 && right_count == 0))
-		return (0);
+	{
+	}
+	return (0);
 }
